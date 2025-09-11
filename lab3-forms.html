@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Order Form</title>
+</head>
+<body>
+     <h1>Coffee Order</h1>
+
+     <form action="https://www.w3schools.com/action_page.php" method="get">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </p>
+        
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </p>
+        
+        <p>
+            <label for="coffeeType">Coffee Type:</label>
+            <select name="coffeeType" id="coffeeType">
+                <option value="Americano">Americano</option>
+                <option value="Capuccino">Capuccino</option>
+                <option value="Latte">Vanilla Latte</option>
+                <option value="Espresso">Espresso</option>
+            </select>
+        </p>
+        
+        <p>
+            <label for="coffeeSize">Coffee Size:</label>
+            <input type="radio" name="coffeeSize" id="small">Small
+            <input type="radio" name="coffeeSize" id="medium">Medium
+            <input type="radio" name="coffeeSize" id="large">Large
+        </p>
+         
+        <p>
+            <label for="extras">Extras:</label>
+            <input type="checkbox" name="extras" id="whippedCream">Whipped Cream
+            <input type="checkbox" name="extras" id="extraShot">Extra Shot
+            <input type="checkbox" name="extras" id="almondMilk">Almond Milk
+        </p>
+
+        <p>
+            <textarea name="Adittional Instructions" id="additional_instructions" maxlength="200"></textarea>
+        </p>
+        
+        <button type="submit">Submit</button>
+     </form>
+</body>
+</html>
