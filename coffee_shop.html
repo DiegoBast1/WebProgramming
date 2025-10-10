@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Haven</title>
+</head>
+<style>
+
+  body {
+  display: grid;
+  min-height: 300px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  background-color: #f5ede4; 
+  font-family: serif; 
+   color: #2f2b2b; 
+}
+
+.header {
+  grid-area: header;
+  background-color: #80593d; 
+  color: #fff8f0; 
+  text-align: center;
+  padding: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: serif; 
+}
+
+.header p {
+  font-size: 1.1rem;
+}
+
+
+.nav {
+  grid-area: nav;
+  background-color: #8b6f47;
+  padding: 1rem;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+
+.nav a:hover {
+  color: #2f2b2b;
+}
+
+
+.main-content {
+  grid-area: main;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-content h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #3c2f2f;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.flex-item {
+  background-color: #fff; 
+  border: 2px solid #8b6f47; 
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 200px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.flex-item:hover {
+ cursor: pointer;
+ background-color: #d4a373;
+ color: #fff;
+ 
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #80593d;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width = 750px) {
+
+  .header {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .flex-item {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width = 450px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .nav a {
+    font-size: 1rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+
+<body>
+  <header class="header">
+    <h1>Java Haven</h1>
+    <p>Your daily dose of caffeine and comfort.</p>
+  </header>
+  
+  <nav class="nav">
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <main class="main-content">
+    <h2>Featured Coffees</h2>
+    <div class="flex-container">
+      <div class="flex-item">Espresso</div>
+      <div class="flex-item">Cappuccino</div>
+      <div class="flex-item">Latte</div>
+      <div class="flex-item">Mocha</div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2025 Java Haven. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
